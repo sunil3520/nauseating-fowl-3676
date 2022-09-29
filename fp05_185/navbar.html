@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+        #navbar{
+            width:1320px;
+            height:90px;
+            border:1px solid red;
+            background-repeat: repeat-x;
+            background: no-repeat center top #ffffff;
+            z-index: 9;
+            position: relative;
+            display: block;
+            position: sticky;
+        }
+        #navbartop{
+            
+            display: flex;
+        }
+        .navlogin{
+            font-size: 12px;
+            margin-top: -5px;
+            margin-left: 270px;  
+        }
+        .navbartopcontent{
+            display:flex;
+            font-size: 12px;
+            color: #393939;
+            margin:0px;
+            margin-top: -5px;
+            text-align: center;
+        }
+        .navcon{
+            /* text-align: center; */
+            border-right: 1px solid #d9d9d9;
+            cursor:pointer;
+            height:16px;
+            margin-right:-30px;
+            width:140px;
+            padding-left:-10px;
+            margin-left:25px;
+        }
+        .navmiddle{
+            display:flex;
+            margin-top: -10px;
+        }
+        .navmiddle div{
+            border:1px solid blue;
+        }
+        .navmiddle>div:nth-child(1){
+            width:345px;
+            margin-top: -25px;
+        }
+        .dropbtn {
+            background-color: #f3f3f3;
+            color: black;
+            padding: 9px 35px;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content p {
+            color: black;
+            padding: 3px 3px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content p:hover {background-color: #f3f3f3}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #f3f3f3;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="position:fixed; z-index:10000;"id="navbar">
+        <div style="position:relative;"id="navbartop">
+            <div class="navbartopcontent">
+                <p class="navcon" style="margin-left:340px">Online Slots Availability</p>
+                <p class="navcon">Fresh & Fast</p>
+                <p class="navcon">Store Locator</p>
+                <p class="navcon">Contact Us</p>
+    
+            </div>
+            <div class="navlogin">
+                <div><a  style="color:#880033;"href="login.html"><p style="text-decoration:none;">Login/Register</p></a></div>
+                <div></div>
+    
+            </div>
+        </div>
+        <div style="position:fixed;"class="navmiddle">
+            <div><a href="homepage.html"><img src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Mumbai</button>
+                <div class="dropdown-content">
+                <p>Pune</p>
+                <p>Mumbai</p>
+                <p>Delhi</p>
+                <p>Kolkata</p>
+                <p>Thane</p>
+                <p>Bengaluru</p>
+                <p>Raigarh</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div style="display:flex;">
+                    <input  style="text-align: center;border-radius: 5px;border:1px solid #f3f3f3;"type="text" id="navsearch" placeholder=""/>
+                    <img src="https://www.naturesbasket.co.in/Images/search-button.jpg"/>
+
+                </div>
+                
+                <div class="dropdown-content">
+                <p style="text-align:center;">Pune</p>
+                <p style="text-align:center;">Mumbai</p>
+                <p style="text-align:center;">Delhi</p>
+                <p style="text-align:center;">Kolkata</p>
+                <p style="text-align:center;">Thane</p>
+                <p style="text-align:center;">Bengaluru</p>
+                <p style="text-align:center;">Raigarh</p>
+                </div>
+            </div>
+            <div class="navcart">
+
+                <i style="font-size:24px;color:black;"class="fa">&#xf07a;</i>
+                <i style="color:rgb(110, 198, 110);"class="fa fa-star fa_custom"></i>
+                
+                
+                    
+
+                
+    
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
