@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      #head{
+        margin-left: 8%;
+      }
+      #details{
+        display: flex;
+        margin: 0% 8% 0% 8%;
+      } 
+      #image_details{
+        flex: 3;
+        /* border: 1px solid red; */
+        height: 100vh;
+      
+      }
+      #name_details{
+        flex: 7;
+        /* border: 1px solid black; */
+        height: 100vh;
+        margin-left: 10%;
+      }
+      #image_details>img{
+          
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           
+      }
+      #name_details>div>div{
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+    
+        /* border: 1px solid red; */
+      }
+      #name_details>div>div>img{
+        width: 15px;
+        height: 15px;
+        margin-top: 15px;
+      }
+      #name_details>div>span{
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 10px;
+      }
+      #name_details>div>button{
+        padding: 7px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: green;
+        color: white;
+        margin-left: 5px;
+      }
+      #name_details>div>button+p{
+   
+        font-size: 10px;
+       
+        
+      }
+     
+    </style>
+</head>
+<body>
+    <p id="head">Home > Breakfast, Dairy & Bakery  >  Bakery  >  </p>
+    <div id="details">
+        <div id="image_details"></div>
+        <div id="name_details"></div>
+    </div>
+</body>
+</html>
+
+<script src="productPage.js"></script>
