@@ -16,7 +16,7 @@ setInterval(function(){
     pic.src=slides[i]
     slideContainer.append(pic)
     i++
-},4000)
+},5000)
 
 }
 SlideShowStart()
