@@ -79,3 +79,10 @@ text-transform: uppercase;
 }#single>img{
     border-radius: 10px;
 }
+.pro{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+}
+.parent>img{
+    width: 100%;
+}
