@@ -8,7 +8,7 @@ const navbar=()=>{
 
     </div>
     <div class="navlogin">
-    <div><a  style="color:#880033;" href="/nauseating-fowl-3676/login.html"><p style="text-decoration:none;">Login/Register</p></a></div>
+    <div><a  style="color:#880033;" href="login.html"><p style="text-decoration:none;">Login/Register</p></a></div>
         <div></div>
 
     </div>
@@ -47,7 +47,7 @@ const navbar=()=>{
     <div class="navcart">
         <a href=""><i style="color:rgb(110, 198, 110);"class="fa fa-star fa_custom"></i></a>
         <!-- <a href="cart.html"><img src="https://www.naturesbasket.co.in/Images/header-icons.jpg"/></a> -->
-        <a href="/nauseating-fowl-3676/cart.html"><i style="font-size:24px;color:rgb(110, 198, 110);cursor: pointer;"class="fa">&#xf07a;</i></a>
+        <a href="/cart.html"><i style="font-size:24px;color:rgb(110, 198, 110);cursor: pointer;"class="fa">&#xf07a;</i></a>
 
     </div>
 </div>
@@ -69,7 +69,7 @@ const navbar=()=>{
     <div class="navbotdropdown1">
         <button class="navbotdropbtn1">MY ORDERS<img src="https://www.naturesbasket.co.in/Images/menuicon1.png"/></button>
         <div class="navbotdropdown-content1">
-        <p><a href="/nauseating-fowl-3676/cart.html">Cart</a></p> 
+        <p><a href="/cart.html">Cart</a></p>
         </div>
     </div>
     <div class="navbotdropdown1">
