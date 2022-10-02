@@ -1,7 +1,42 @@
-//import navbar
+
 import {navbar} from './fp05_185/components/navbar.js';
 let navbar_div=document.getElementById('navbar');
 navbar_div.innerHTML=navbar();
+
+var signup = document.getElementById("signin_button");
+   
+signup.addEventListener('click', subbed);
+function subbed(){
+    
+    var mobile = document.getElementById("signup_mobile").value;
+    var password = document.getElementById("signup_pass").value;
+    localStorage.setItem('mobile', JSON.stringify(mobile));
+    localStorage.setItem('password', JSON.stringify(password));
+    
+
+}
+
+var login = document.getElementById("login_button");
+
+login.addEventListener('click', subbed2);
+function subbed2() {
+    
+    var mob = JSON.parse(localStorage.getItem('mobile'));
+    var pass = JSON.parse(localStorage.getItem('password'));
+    var login_mob = document.getElementById("login_mobile").value;
+    var login_password = document.getElementById("login_pass").value;
+
+    
+   if (mob == login_mob && pass == login_password) {       
+         alert('Login Successful')
+   }    
+   else {
+       alert('Login not successful');
+       location.reload();
+   }
+}
+
+
 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
