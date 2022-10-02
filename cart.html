@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        .dyn1{
+            background-color: #F1F1F1;
+        }
+
+        .dyn2 {
+            background-color: #F1F1F1;
+        }
+
+        .dyn3 {
+            background-color: green;
+            color: white;
+            width: 100px;
+            height: 50px;;
+        }
+
+        .img {
+            width: 200px;
+            height: 300px;
+        }
+
+        .button {
+            width: 250px;
+            height: 50px;
+            background-color: green;
+            color: white;
+        }
+
+        #new {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 36px;
+            color: red;
+            background-color: #F1F1F1;
+            border: 1px solid black;
+            margin-bottom: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+<header>
+    <nav id="navbar" style="width: 100%; background-color: white;">
+        <div>
+            <a href="index.html"><img src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
+                    alt="Nature's Basket Logo"></a>
+            <div class="div-1">
+                &nbsp;
+                <a href="">Online Slots Availability</a>&nbsp;
+                <span class="div-2"></span>
+                &nbsp;
+                <a href="">Fresh & Fast</a>&nbsp;
+                <span class="div-2"></span>
+                &nbsp;
+                <a href="">Store Locator</a>&nbsp;
+                <span class="div-2"></span>
+                &nbsp;<a href="">Contact Us</a>&nbsp;
+                <span class="div-2"></span>
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a href="login-signup.html">Login &nbsp; <span class="div-2"></span> &nbsp; Register</a>
+                <br><br>
+                <button id="myBtn"><i class="fa fa-pencil" aria-hidden="true"></i>Enter Pin</button>
+                <select name='takeation' style="border-right: none;">
+                    <option class='head'>Ajeetgarh</option>
+                    <option value='Action 1'>Adoni</option>
+                    <option value='Action 2'>Agartala</option>
+                    <option value='Action 3'>Agra</option>
+                    <option value='Action 3'>Ahmedabad</option>
+                    <option value='Action 3'>Ahmednagar</option>
+                    <option value='Action 3'>Aizawl</option>
+                    <option value='Action 3'>Ajmer</option>
+                    <option value='Action 3'>Akola</option>
+                    <option value='Action 2'>Alappuzha</option>
+                    <option value='Action 3'>Aligarh</option>
+                    <option value='Action 3'>Allahbad</option>
+                    <option value='Action 3'>Alwar</option>
+                    <option value='Action 3'>Amarvati</option>
+                    <option value='Action 3'> Bahraich </option>
+                    <option value='Action 3'> Ballia </option>
+                    <option value='Action 3'> Bally </option>
+                    <option value='Action 3'> Bangalore </option>
+                    <option value='Action 3'>Baranagar </option>
+                    <option value='Action 3'>Barasat </option>
+                    <option value='Action 3'>Bardhaman </option>
+                    <option value='Action 3'>Bareilly </option>
+                    <option value='Action 3'>Bathinda </option>
+                    <option value='Action 3'>Begusarai </option>
+                    <option value='Action 3'>Belgaum </option>
+                    <option value='Action 3'>Bellary </option>
+                    <option value='Action 3'>Berhampore </option>
+                    <option value='Action 3'>Berhampur </option>
+                    <option value='Action 3'>Bettiah</option>
+                    <option value='Action 3'>Bhagalpur </option>
+                    <option value='Action 3'>Bhalswa Jahangir Pur</option>
+                    <option value='Action 3'> Bharatpur</option>
+                    <option value='Action 3'>Bhatpara </option>
+                    <option value='Action 3'>Bhavnagar </option>
+                    <option value='Action 3'> Bhilai </option>
+                    <option value='Action 3'> Bhilwara </option>
+                    <option value='Action 3'>Bhimavaram </option>
+                    <option value='Action 3'>Bhind </option>
+                    <option value='Action 3'>Bhiwandi </option>
+                    <option value='Action 3'>Bhiwani </option>
+                    <option value='Action 3'>Bhopal </option>
+                    <option value='Action 3'>Bhubaneswar </option>
+                    <option value='Action 3'>Bhusawal </option>
+                    <option value='Action 3'>Bidar </option>
+                    <option value='Action 3'>Bidhannagar </option>
+                    <option value='Action 3'>Bihar Sharif </option>
+                    <option value='Action 3'>Bijapur </option>
+                    <option value='Action 3'>Bikaner </option>
+                    <option value='Action 3'>Bilaspur </option>
+                    <option value='Action 3'>Bokaro </option>
+                    <option value='Action 3'>Bongaigaon </option>
+                    <option value='Action 3'>Bulandshahr </option>
+                    <option value='Action 3'>Burhanpur </option>
+                    <option value='Action 3'>Buxar </option>
+                    <option value='Action 3'>Chandigarh </option>
+                    <option value='Action 3'>Chandrapur </option>
+                    <option value='Action 3'>Chapra </option>
+                    <option value='Action 3'>Chennai </option>
+                    <option value='Action 3'>Chinsurah </option>
+                    <option value='Action 3'>Chittoor </option>
+                    <option value='Action 3'>Coimbatore </option>
+                    <option value='Action 3'>Cuttack </option>
+                    <option value='Action 3'>Danapur </option>
+                    <option value='Action 3'>Darbhanga </option>
+                    <option value='Action 3'>Davanagere </option>
+                    <option value='Action 3'>Dehradun </option>
+                    <option value='Action 3'>Dehri </option>
+                    <option value='Action 3'>Delhi </option>
+                    <option value='Action 3'>Deoghar </option>
+                    <option value='Action 3'>Dewas </option>
+                    <option value='Action 3'>Dhanbad </option>
+                    <option value='Action 3'>Dharmavaram </option>
+                    <option value='Action 3'>Dhule </option>
+                    <option value='Action 3'>Dibrugarh </option>
+                    <option value='Action 3'>Dindigul </option>
+                    <option value='Action 3'>Durg </option>
+                    <option value='Action 3'>Durgapur </option>
+                    <option value='Action 3'>Eluru </option>
+                    <option value='Action 3'>Erode </option>
+                    <option value='Action 3'>Etawah </option>
+                    <option value='Action 3'>Faridabad </option>
+                    <option value='Action 3'>Farrukhabad </option>
+                    <option value='Action 3'>Fatehpur </option>
+                    <option value='Action 3'>Firozabad </option>
+                    <option value='Action 3'>Gandhidham </option>
+                    <option value='Action 3'>Gandhinagar </option>
+                    <option value='Action 3'>Gangtok </option>
+                    <option value='Action 3'>Gaya </option>
+                    <option value='Action 3'>Ghaziabad</option>
+                </select>
+
+                <div class="dropdown">
+                    <input type="text" placeholder="Start shopping..."
+                        style="border-left: 0px; float: left; width: 620px; height: 25px;" id="search-dropdn" list="sl">
+                    <div class="dropdown-content">
+                        <p>
+                            <center style="font-size: 1.5em; color:green;">Trending Searches</center>
+                        </p>
+                        <p>
+                            <center>Organic</center>
+                        </p>
+                        <p>
+                            <center>Fresh Artisinal Breads</center>
+                        </p>
+                        <p>
+                            <center>Cold cuts & Seafood</center>
+                        </p>
+                        <p>
+                            <center>Diabetic Friendly Foods</center>
+                        </p>
+                        <p>
+                            <center>L’Exclusif</center>
+                        </p>
+                        <p>
+                            <center>Healthy Alternatives</center>
+                        </p>
+                        <p>
+                            <center>Birthdays & Anniversary Gift Hampers</center>
+                        </p>
+                        <p>
+                            <center>Platters & Dips</center>
+                        </p>
+                        <p>
+                            <center>Smoked Cheese</center>
+                        </p>
+                        <p>
+                            <center>Ice creams & Desserts</center>
+                        </p>
+                        <p>
+                            <center>Keto-Paleo</center>
+                        </p>
+                    </div>
+                </div>
+                <span>
+
+                    <a href="cart.html"><span style="color: #84BA3E; float: right; width: 25px; height: 25px;"
+                            id="shopping-cart"><i class="fas fa-shopping-cart"></i></span></a>
+                    <button style="background-color: #84BA3E; color: white; float: right; width: 25px; height: 25px;"><i
+                            class="fa fa-search" aria-hidden="true"></i></button>
+
+                </span>
+            </div>
+        </div>
+
+        <div id="mynewmod" class="newmod">
+
+            <div class="newmod-content">
+                <span class="close">&times;</span>
+                <p>Enter Your Delivery Pincode</p>
+                <input type="number" placeholder="Delivery pincode" id="search-hover">
+                <button>SUBMIT</button>
+                <div class="newmod-content-2">
+                    Entering your delivery pincode will allow us to show you the products available in your area and to
+                    ensure timely
+                    delivery.
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <h2>Gokul</h2>
+    <h2>Gokul</h2>
+
+    <ul style="letter-spacing: 1px;">
+        <li><a class="active dropdn" href="#home" style="border-bottom: transparent 2px solid;" id="shopbycategory">SHOP
+                BY CATEGORY &nbsp; <i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#news">PAST PURCHASES</a></li>
+        <li><a href="#contact">GIFTING</a></li>
+        <li><a href="#contact">REWARDS</a></li>
+        <li><a href="#contact">BLOG</a></li>
+        <li><a href="#contact">OFFERS</a></li>
+        <li><a href="#contact" style="justify-content: start;">CONNOISSEUR'S SELECTION</a></li>
+        <li><a href="#contact">BOOK VISIT</a></li>
+    </ul>
+</header>
+    <div>
+        <img style="margin-left:1%; border-radius: 0%;" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/40ffdf36-959e-49f1-9c5c-e43639e69a01.png?v=2">
+    </div>
+    <div>
+        <h1 style="text-align: center;">Products page</h1>
+        <span style="margin-left: 40%;"><button class="button" id="remove"> Remove All Products </button>
+    <a href="checkout.html"><span style="margin-left: 40%;"><button class="button"> Proceed To Checkout </button></span></a>
+    <div id="new"></div>
+    <div id="grid-container"></div>
+   
+</body>
+</html>
+=======
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="/nauseating-fowl-3676/fp05_185/styles/navbar.css">
+    <link rel="stylesheet" href="/nauseating-fowl-3676/cart.css">
+   
+</head>
+<body>
+    <div id="navbar"></div>
+    <div>
+        <img style="margin-left:1%; border-radius: 0%;" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/websitecart.png">
+    </div>
+    <div>
+    
+        <span style="margin-left: 40%;"><button class="button" id="remove" style="margin-top: 30px;height: 30px;background-color: chartreuse;color: black;"> Remove All Products </button>
+    <a href="checkout.html"><span style="margin-left: 40%;"><button class="button"  style="margin-top: 30px;height: 30px;background-color: chartreuse;color: black;"> Proceed To Checkout </button></span></a>
+    <div id="new"></div>
+    <div id="grid-container"></div>
+    <script type="module" src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<script type="module" src="/cart.js"></script>
+

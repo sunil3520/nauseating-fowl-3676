@@ -1,0 +1,145 @@
+/* *{
+            border: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        } */
+
+#main {
+  display: flex;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+#main > div:first-child {
+  flex: 1.5;
+  border: 1px solid wheat;
+  height: 738px;
+}
+#main > div:last-child {
+  flex: 8.5;
+  
+  /* border: 1px solid; */
+}
+#filter > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+}
+#filter > div:nth-child(2) {
+  /* border: 1px solid; */
+  padding: 0px;
+}
+#filter > div:first-child > h4 {
+  margin-top: 10px;
+}
+#filter > div > a {
+  font-size: small;
+  color: green;
+}
+.catagory_h5 {
+  border: 0px solid;
+  padding: 5px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #ba1e78;
+}
+#catagory_heading:hover {
+  background-color: #ba1e78;
+  cursor: pointer;
+  color: black;
+}
+.catagory_filter {
+  /* border: 1px solid red; */
+  height: 150px;
+  /* scrollbar-width: thin; */
+
+  overflow-y: scroll;
+}
+.c_filter {
+  height: 50px;
+}
+
+.catagory_filter > button {
+  border: 1px solid #ba1e78;
+  width: 98%;
+  display: block;
+  margin-top: 5px;
+  padding: 6px;
+  text-align: left;
+  border-radius: 5px;
+  color: #ba1e78;
+  cursor: pointer;
+}
+.catagory_filter > button:hover {
+  background-color: #ba1e78;
+  color: white;
+}
+.catagory_h1 {
+  font-weight: bold;
+}
+
+.cl_filter > button:hover {
+  color: green;
+  background-color: transparent;
+}
+
+
+
+#product {
+    /* border: 1px solid yellow; */
+    margin-left: 15px;
+  }
+  #headline {
+    display: flex;
+    
+    /* border: 1px solid; */
+    justify-content: space-between;
+    line-height: 0px;
+  }
+  #headline>div{
+    display: flex;
+  
+    width: 150px;
+    justify-content: space-between;
+  }
+  #headline > p:first-child {
+    font-size: 20px;
+  }
+   
+  #appendData{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    position: relative;
+  }
+  #appendData>div{
+    text-align: center;
+    padding:5px 10px 35px 10px;
+    
+  }
+  #appendData>div:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    /* width: 110%;
+    height: 500px;  
+    position: static;      */
+  }
+  #appendData>div>img{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;        width: 100%;
+    cursor: pointer;
+    height: 270px;
+   }
+   #appendData>div>p{
+    cursor: pointer;
+   }
+   #appendData>div>span{
+    border: 1px solid;
+    margin-right: 5px;
+    padding: 7px;
+    font-size: 10px;
+    
+    
+   }
+   #appendData>div>button{
+    padding: 6px 20px;
+    cursor: pointer;
+   }
