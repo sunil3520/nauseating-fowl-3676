@@ -1,7 +1,3 @@
-//import navbar
-import {navbar} from './fp05_185/components/navbar.js';
-let navbar_div=document.getElementById('navbar');
-navbar_div.innerHTML=navbar();
 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
