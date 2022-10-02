@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <style>
         * {
@@ -82,6 +83,14 @@
 
 
 
+=======
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="/nauseating-fowl-3676/fp05_185/styles/navbar.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div id="navbar"></div>
+
     <div id="all" style="margin: auto;">
         <div class="cont">
             <h1>Checkout</h1>
@@ -144,10 +153,17 @@
     </div>
 </body>
 
+
 </html>
 
 <script>
     function payment() {
+=======
+</html>
+<script type="module" src="/nauseating-fowl-3676/checkout.js"></script>
+<script>
+        function payment() {
+
         let parent = document.getElementById("all");
 
         parent.innerHTML = null;
@@ -171,5 +187,4 @@
             localStorage.removeItem("cart");
         }, 2000);
     }
-</script>
-    
+
