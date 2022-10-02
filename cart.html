@@ -4,171 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-
-        .dyn1{
-            background-color: #F1F1F1;
-        }
-
-        .dyn2 {
-            background-color: #F1F1F1;
-        }
-
-        .dyn3 {
-            background-color: green;
-            color: white;
-            width: 100px;
-            height: 50px;;
-        }
-
-        .img {
-            width: 200px;
-            height: 300px;
-        }
-
-        .button {
-            width: 250px;
-            height: 50px;
-            background-color: green;
-            color: white;
-        }
-
-        #new {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 36px;
-            color: red;
-            background-color: #F1F1F1;
-            border: 1px solid black;
-            margin-bottom: 50px;
-        }
-
-    </style>
-
-</head>
-<body>
-
-    <!-- navbar not imported beacasue of our member not created a navbae trill now -->
-
-   
-                
-                    <a href="cart.html"><span style="color: #84BA3E; float: right; width: 25px; height: 25px;"
-                            id="shopping-cart"><i class="fas fa-shopping-cart"></i></span></a>
-                    <button style="background-color: #84BA3E; color: white; float: right; width: 25px; height: 25px;"><i
-                            class="fa fa-search" aria-hidden="true"></i></button>
-
-             
-
-        <div id="mynewmod" class="newmod">
-
-            <div class="newmod-content">
-                <span class="close">&times;</span>
-                <p>Enter Your Delivery Pincode</p>
-                <input type="number" placeholder="Delivery pincode" id="search-hover">
-                <button>SUBMIT</button>
-                <div class="newmod-content-2">
-                    Entering your delivery pincode will allow us to show you the products available in your area and to
-                    ensure timely
-                    delivery.
-                </div>
-            </div>
-
-        </div>
-
- 
-    
-
-    
-    <div>
-        <img style="margin-left:1%; border-radius: 0%;" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/40ffdf36-959e-49f1-9c5c-e43639e69a01.png?v=2">
-    </div>
-    <div>
-        <h1 style="text-align: center;">Products page</h1>
-        <span style="margin-left: 40%;"><button class="button" id="remove"> Remove All Products </button>
-    <a href="checkout.html"><span style="margin-left: 40%;"><button class="button"> Proceed To Checkout </button></span></a>
-    <div id="new"></div>
-    <div id="grid-container"></div>
-   
-</body>
-</html>
-
-<script>
-
-// navbar not imported beacasue of our member not created a navbae trill now 
-    var gridBox = document.getElementById('grid-container');
-    gridBox.setAttribute('class', 'gridBox');
-    var allThePrices = 0;
-    var numberOfproducts = 0;
-            var values = [];
-                products = Object.keys(localStorage);
-                values.push(localStorage.getItem(products[0]));
-            
-             var prodArr = JSON.parse(values[0]);
-
-                prodArr.map(function (item) {
-                    var prodCard = document.createElement('div');
-                    prodCard.setAttribute('class', 'card');
-                    var pImg = document.createElement('img');
-                    pImg.setAttribute('src', item.img);
-                    pImg.setAttribute('class', 'img');
-                    var pName = document.createElement('h3');
-                    pName.textContent = 'Name: ' + item.name;
-                    pName.className = "dyn1";
-                    var pPrice = document.createElement('h4');
-                    pPrice.textContent = '₹' + item.price;
-                    allThePrices += Number(item.price);
-                    var text = document.createTextNode(item.price);
-                    pPrice.className = "dyn2";
-                    var btn = document.createElement('button');
-                    btn.className = "dyn3";
-                    btn.textContent = 'Remove';
-                    prodCard.append(pImg, pName, pPrice, btn);
-                    gridBox.append(prodCard);
-                })
-
-                var tag = document.createElement("p");
-                var text = document.createTextNode("Total price is: ₹" + allThePrices)
-                tag.appendChild(text);
-                var element = document.getElementById("new");
-                    element.appendChild(tag);
-
-                // Remove cart products with button
-
-                var removeCartItemButtons = document.getElementsByClassName("dyn3");
-                
-                for (var i = 0; i < removeCartItemButtons.length; i++)
-                {
-                    var button = removeCartItemButtons[i];
-                    button.addEventListener('click', function(e) {
-                        var b_clicked = e.target;
-                        b_clicked.parentElement.remove();
-                    })
-                }
-
-                //Remove all from cart
-
-                var removed = document.getElementById("remove");
-                removed.addEventListener('click', function()
-                {
-                    localStorage.removeItem('products');
-                    location.reload();
-                })
-                
-           
-
-</script>
-=======
-=======
     <link rel="stylesheet" href="cart.css">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -182,7 +17,7 @@
 <body>
     <div id="navbar"></div>
     <div>
-        <img style="margin-left:1%; border-radius: 0%;" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/websitecart.png">
+        <img style="margin-left:1%; border-radius: 0%;margin-top: 80px;" src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/websitecart.png">
     </div>
     <div>
     
@@ -194,6 +29,7 @@
     <script src="script.js"></script>
 </body>
 </html>
-<script type="module" src="/cart.js"></script>
+
+<script type="module" src="/nauseating-fowl-3676/cart.js"></script>
 
 
