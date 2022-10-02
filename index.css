@@ -82,7 +82,19 @@ text-transform: uppercase;
 .pro{
     display: grid;
     grid-template-columns: repeat(4,20%);
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .parent>img{
     width: 100%;
+}
+.pButton{
+    width: 25px;
 }

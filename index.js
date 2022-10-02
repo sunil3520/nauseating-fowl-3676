@@ -23,20 +23,23 @@ SlideShowStart()
 /////////////////////////// SlIDESHOW//////////////////////
 
 ///////////////////////////////////////// PRODUCT DATA////////////////////////////////////////
-trendPro=[{name:"HA TAPIOCA FLOUR 400G",qty:1,MRP:"210$",img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg"},
-{name:"Kwality Wall's Ice Cream - Magnum C..",qty:1,MRP:1,img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/578a02e6-8e0b-4868-9689-5733471e3b87_425x425.jpg"},
-    {name:"HA ORGANIC MOONG DAL YELLOW SPLIT 500G",qty:1,MRP:149,img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/120d587f-37c9-4743-bc37-2cbb7bd57025_425x425.jpg"}, {name:"HA TAPIOCA FLOUR 400G",qty:1,MRP:"210$",img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg"}]
+trendPro= [{name:"HA TAPIOCA FLOUR 400G",qty:1,MRP:"210$",img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg"},
+{name:"Kwality Wall's Ice Cream - Magnum C..",qty:1,MRP:"1$",img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/578a02e6-8e0b-4868-9689-5733471e3b87_425x425.jpg"},
+    {name:"HA ORGANIC MOONG DAL YELLOW SPLIT 500G",qty:1,MRP:"149$",img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/120d587f-37c9-4743-bc37-2cbb7bd57025_425x425.jpg"}, {name:"HA TAPIOCA FLOUR 400G",qty:1,MRP:"210$",img:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg"}]
     let appendContainer=document.querySelector(".pro")
     trendPro.forEach(function(e,id){
         let parent=document.createElement("div");
         parent.setAttribute("class","parent")
         let photo=document.createElement("img");
         photo.src=e.img
-        let title=document.createElement("h6");
+        let title=document.createElement("h5");
         title.innerText=e.name
+        let qnty=document.createElement("h6");
+        qnty.innerText=`${"Quantity"}`+" "+e.qty
         let pButton=document.createElement("button")
-        pButton.innerText=e.MRP
+        pButton.setAttribute("classs","pButton");
+        pButton.innerText="Price"+" "+e.MRP
         
-        parent.append(photo,title,pButton)
+        parent.append(photo,title,qnty,pButton)
         appendContainer.append(parent)
     })
