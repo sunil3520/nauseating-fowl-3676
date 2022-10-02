@@ -8,7 +8,7 @@ const navbar=()=>{
 
     </div>
     <div class="navlogin">
-    <div><a  style="color:#880033;" href="/nauseating-fowl-3676/login-signup.html"><p style="text-decoration:none;">Login/Register</p></a></div>
+    <div><a  style="color:#880033;" href="/nauseating-fowl-3676/login.html"><p style="text-decoration:none;">Login/Register</p></a></div>
         <div></div>
 
     </div>
