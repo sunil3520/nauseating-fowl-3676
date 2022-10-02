@@ -89,3 +89,18 @@
     background-color: #f3f3f3;
     color: #b71761;
   }
+
+  #grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  #grid-container>div{
+    text-align: center;
+    padding:5px 10px 35px 10px;
+  }
+
+  #grid-container>div>img{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;        width: 100%;
+    cursor: pointer;
+    height: 270px;
+   }
