@@ -1,3 +1,14 @@
+//import navbar
+import {navbar} from '../fp05_185/components/navbar.js';
+let navbar_div=document.getElementById('navbar');
+navbar_div.innerHTML=navbar();
+
+//import export
+import {footer} from '../fp05_185/components/footer.js';
+let footer_div=document.getElementById('footer');
+footer_div.innerHTML=footer();
+
+
 let data = JSON.parse(localStorage.getItem("details"));
 
 let imageContainer = document.querySelector("#image_details");

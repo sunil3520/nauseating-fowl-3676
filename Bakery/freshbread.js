@@ -1,6 +1,14 @@
 // import bakeryData from '/freshbreadData.js'
 // console.log(bakeryData);
+//import navbar
+import {navbar} from '../fp05_185/components/navbar.js';
+let navbar_div=document.getElementById('navbar');
+navbar_div.innerHTML=navbar();
 
+//export footer
+import {footer} from '../fp05_185/components/footer.js';
+let footer_div=document.getElementById('footer');
+footer_div.innerHTML=footer();
 const bakeryData = [
     {
       image_url:

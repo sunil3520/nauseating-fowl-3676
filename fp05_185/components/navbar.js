@@ -51,7 +51,7 @@ const navbar=()=>{
 
     </div>
 </div>
-<div style="position:fixed;" class="navbottom">
+<div  class="navbottom">
     <div class="navbotdropdown">
         <button  style="background-color: #f3f3f3;"class="navbotdropbtn">SHOP BY CATEGORY<img src="https://www.naturesbasket.co.in/Images/menuicon1.png"/></button>
         <div class="navbotdropdown-content">
