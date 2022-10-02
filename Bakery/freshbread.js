@@ -282,7 +282,7 @@ const bakeryData = [
             window.location.href='productPage.html'
         })
         btn.addEventListener('click',()=>{
-           let  CartData=JSON.parse(localStorage.getItem('cart'))||[];
+           let  CartData=JSON.parse(localStorage.getItem('products'))||[];
            let obj={
              image:el.image_url,
              name:el.product_name,
@@ -290,7 +290,7 @@ const bakeryData = [
              price:el.product_price,
            }
            CartData.push(obj);
-           localStorage.setItem('cart',JSON.stringify(CartData));
+           localStorage.setItem('products',JSON.stringify(CartData));
            
        
     });
@@ -330,8 +330,7 @@ const bakeryData = [
                  }
   }
 
-
-
+ 
  
 
   

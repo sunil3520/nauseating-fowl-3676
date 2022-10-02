@@ -40,7 +40,7 @@ const showDetails_ = () => {
   bttn.style.cursor = "pointer";
   bttn.innerText = "ADD";
   bttn.addEventListener("click", () => {
-    let CartData = JSON.parse(localStorage.getItem("cart")) || [];
+    let CartData = JSON.parse(localStorage.getItem("products")) || [];
     let obj = {
       image: data.image,
       name: data.name,
@@ -48,7 +48,7 @@ const showDetails_ = () => {
       price: data.price,
     };
     CartData.push(obj);
-    localStorage.setItem("cart", JSON.stringify(CartData));
+    localStorage.setItem("products", JSON.stringify(CartData));
   });
   let p4=document.createElement('p');
   p4.innerText='(Inclusive all of taxes)'
