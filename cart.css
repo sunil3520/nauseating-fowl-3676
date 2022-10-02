@@ -1,0 +1,91 @@
+.div-1 {
+    border: 1px solid transparent;
+    height: 50%;
+    margin-left: 10%;
+    width: 100%;
+  }
+  
+  .div-2 {
+    border: 1px solid #d9d9d9;
+  }
+  
+  nav > div {
+    display: inline-flex;
+    border: 1px solid transparent;
+    width: 100%;
+  }
+  
+  .div-1 > input {
+    width: 70%;
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .div-1 > button {
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .div-1 > button:nth-child(2) {
+    border: 0px;
+  }
+  
+  .div-1 > a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .div-1 > select {
+    float: left;
+    padding: 5px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    top: 0;
+    border: #e1e1e1 1px solid;
+    margin-bottom: 1%;
+  }
+  
+  li {
+    float: left;
+    width: 10%;
+  }
+  
+  li:nth-child(1) {
+    width: 15%;
+  }
+  
+  li:nth-child(2) {
+    width: 15%;
+  }
+  
+  li:nth-child(7) {
+    width: 20%;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #f3f3f3;
+    border-bottom: #b71761 2px solid;
+  }
+  
+  .active {
+    background-color: #f3f3f3;
+    color: #b71761;
+  }
